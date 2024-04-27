@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="stilo.css">
 </head>
 <body>
-<!--Chame seu script aqui--> 
+    <div id="area">
+        <h2>Conversor de Moedas</h2>
+        <p>Digite o valor a ser convertido:</p>
+        <input type="text" id="valor">
+        <p>Selecione a Moeda de Origem</p>
+        <select name="escolhaOrigem" id="opcaoOrigem">
+            <option value="brl">BRL</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+        </select>
+        <p>Escolha a Moeda de Destino:</p>
+        <select name="esolhaDestino" id="opcaoDestino">
+            <option value="brl">BRL</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+        </select>
+        <br>
+        <input type="button" value="Coverter" id="converter">
+    </div>
+    <div id="resultado"></div>
+    <script src="script.js"></script>
+
 </body>
 </html>
